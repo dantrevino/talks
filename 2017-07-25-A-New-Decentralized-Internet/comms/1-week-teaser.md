@@ -3,5 +3,5 @@ developer will be presenting an introduction to the Open Source Blockstack proje
 first application.  
 
 In my opinion, one of the great things about the approach that Blockstack has taken is that it is largely
-programming language agnostic.  Auth libraries are available for Python and Ruby.  There is a todo app written
+programming language agnostic.  Auth libraries are available for Python and Ruby.  There is a [todo app](https://github.com/blockstack/blockstack-todos) written
 [in Javascript and a [music player](http://ongakuryoho.com/) written in Elm, Node, and Haskell.
