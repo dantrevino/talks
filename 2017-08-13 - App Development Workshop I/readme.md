@@ -1,1 +1,1 @@
-## App Development Workshop I ##
+## Decentralized App Development Workshop I ##
