@@ -1,9 +1,9 @@
 1. Welcome/Introduction
-1. Intel Requirements
-  * Go to North Parking lot
-  * 4-4444 for Emergencies (chemical spill, medical, fire,etc)
-1. WiFi: Guest, access code: 94554288
-1. Larry Salibra
+2. Intel Requirements
+  a. Go to North Parking lot
+  b. 4-4444 for Emergencies (chemical spill, medical, fire,etc)
+3. WiFi: Guest, access code: 94554288
+4. Introduce Larry Salibra
 
 Also - Post
 1. slack channel link
