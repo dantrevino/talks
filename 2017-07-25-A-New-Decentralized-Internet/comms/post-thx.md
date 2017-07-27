@@ -8,4 +8,5 @@ I'm planning an decentralized app building workshop for August.  We may also jus
 because the discussion Tuesday night was great.  I'm interested in everyone's feedback, whether you were able to attend
 Tuesday night or not, and so look for a survey in the next couple of days.
 
+Thanks!
 Dan
