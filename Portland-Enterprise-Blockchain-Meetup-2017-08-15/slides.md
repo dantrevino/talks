@@ -1,8 +1,7 @@
-# Intro
-
-* Blockstack
+# Intro to Blockstack
 
 Note: Intro
+
 ---
 
 ## Background
