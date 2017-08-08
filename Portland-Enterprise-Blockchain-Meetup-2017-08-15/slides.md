@@ -17,7 +17,9 @@ Note: Intro
 ---
 
 ## Background
-### Today
+### The Future is Today
+* Internet vs Decentralized Internet
+* Examples
 
 ---
 
@@ -26,46 +28,10 @@ Note: Intro
 
 ---
 
-## Heading
+## Building Applications
 ### Subheading
 
 ---
 
-## Heading
+## What's Next?
 ### Subheading
-
----
-
-## Heading
-### Subheading
-
----
-
-## Heading
-### Subheading
-
----
-
-## Heading
-### Subheading
-
----
-
-## Heading
-### Subheading
-
----
-
-## Heading
-### Subheading
-
----
-
-## Heading
-### Subheading
-
----
-
-## Heading
-### Subheading
-
