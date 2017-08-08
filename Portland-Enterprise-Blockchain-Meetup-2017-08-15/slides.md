@@ -25,13 +25,18 @@ Note: Intro
 * Storage
 * Identity
 * Blockchain Agnostic
+
 ---
 
 ## Building Applications
 * Javascript
 * Python
 * Ruby
+
 ---
 
 ## What's Next?
-### Subheading
+* Blockstack Slack
+* Blockstack Meetup
+
+--
