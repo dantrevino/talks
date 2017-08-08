@@ -11,26 +11,26 @@ Note: Intro
 
 ---
 
-## Background
-### History
+## History
 
 ---
 
-## Background
-### The Future is Today
+## The Future is Today
 * Internet vs Decentralized Internet
 * Examples
 
 ---
 
 ## Architecture
-### Subheading
-
+* Storage
+* Identity
+* Blockchain Agnostic
 ---
 
 ## Building Applications
-### Subheading
-
+* Javascript
+* Python
+* Ruby
 ---
 
 ## What's Next?
