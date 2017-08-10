@@ -2,8 +2,7 @@
 ![BlockStack](https://media.githubusercontent.com/media/blockstack/designs/master/logo/external/RGB/logo/blockstack-logo-vertical-bug%402x.png)
 
 
-@dantrevino
-
+>>dan.trvino@nike.com
 ---
 
 <section data-background="#270f34">
@@ -67,7 +66,17 @@ Note:
 <section data-background="#270f34">
 ## Demo ##
 
-Note: ToDo Demo
+Note:
+1) ToDo Demo - identity & storage
+2) Identity
+  a. Landing.vue
+    i. blockstack.redirectToSignIn()
+  b. App.vue
+    i. blockstack.isUserSignedIn()
+3) storage
+  a. Dashboard.vue
+    i. blockstack.putFile()
+    ii. blockstack.getFile()
 
 ---
 
