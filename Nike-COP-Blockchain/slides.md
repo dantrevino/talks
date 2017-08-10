@@ -2,7 +2,7 @@
 ![BlockStack](https://media.githubusercontent.com/media/blockstack/designs/master/logo/external/RGB/logo/blockstack-logo-vertical-bug%402x.png)
 
 
->>dan.trvino@nike.com
+###### dan.trevino@nike.com
 ---
 
 <section data-background="#270f34">
@@ -31,8 +31,6 @@ Note:
 
 2) .id namespace on bitcoin blockchain
 
-3)
-
 ---
 
 <section data-background="#270f34">
@@ -44,8 +42,6 @@ Note:
 1) Turns existing storage providers into dumb datastores (privacy, encryption)
 
 2) Uses familiar filesystem concepts such as inodes, getFile, putFile
-
-3)
 
 ---
 
