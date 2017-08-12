@@ -14,7 +14,7 @@
 Note:
 1) Blockstack is a new decentralized Internet where users own their data and apps run locally.
 
-2) Blockstack is an open source layer to the bitcoin blockchain that enables identity, storage, and discovery.
+2) Blockstack is an open source development layer for the bitcoin blockchain that enables identity, storage, and discovery.
 
 3) Built to be blockchain agnostic
 
@@ -56,7 +56,7 @@ Note:
 [Atlas](http://blockstack.org/) --whitepaper?
 
 Note:
-1) DHT
+1) DHT based
 
 2) Each node maintains a full copy of zone hashes
 
@@ -97,6 +97,6 @@ Note:
 ## Find Us ##
 
 * Slack - chat.blockstack.org
-* Twitter - @BlockstackOrg
+* Twitter - <i class="fa fa-twitter" aria-hidden="true"></i>@BlockstackOrg
 * GitHub - github.com/blockstack/
 * Meetup - meetup.com/Blockstack-Portland
