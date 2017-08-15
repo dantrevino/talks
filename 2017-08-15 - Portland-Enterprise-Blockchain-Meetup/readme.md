@@ -4,7 +4,7 @@
 Install reveal-md
 
 ```
-npm install reaveal-md
+npm install reveal-md
 ```
 
 Clone the repo 
