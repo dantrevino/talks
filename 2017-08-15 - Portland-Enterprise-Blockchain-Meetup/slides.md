@@ -78,7 +78,8 @@ b) Application's journal can be forked and corrupted by the underlying blockchai
 
 ---
 
-## Find Us ##
+<section data-background="#270f34">
+## Join Us! ##
 
 * Slack - chat.blockstack.org
 * Twitter - @BlockstackOrg
