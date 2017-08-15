@@ -43,25 +43,11 @@ Note:
 
 Note:
 
-1) Discovery (BNS)
+1) Discovery (Atlas, BNS) - Atlas, a peer network that enables discovery for the BlockStack Naming System.  
 
-  a) Works like DHT, but defintely not a DHT.  The Atlas peer network is _unstructured_, unlike DHTs, which makes it more resilient to individual edges in the peer graph failing.
+2) Identity (Blockchain ID) - Based on the Blockstack Naming System, users peg their identities to domains e.g. `jackzampolin.id`. 
 
-  b) Each peer has a 100% replica of all the system's zone files, so all your routing lookups are locally-handled (no Dyn DNS-like DDoS attacks are possible)
-
-  c) As long as the peer network graph is connected (doesn't matter how), every peer will eventually get 100% of the zone files.  
-
-2) Identity (Blockchain ID)
-  
-  a) Based on the Blockstack Naming System, users peg their identities to domains e.g. `jackzampolin.id`. 
-
-3) Storage (Gaia)
-  
-  a) Turns existing storage providers into dumb datastores (privacy, encryption)
-  
-  b) Uses familiar filesystem concepts such as getFile, putFile, inodes 
-  
-  c) Implemented in a simple Javascript API (`getFile()`, `putFile()`) 
+3) Storage (Gaia) - User and application data tied to app/system keys and users.
 
 ---
 
@@ -70,16 +56,15 @@ Note:
 
 <img src="https://blockstack.org/images/visuals/blockstack-tx-diagram.png" width="500">
 
-
 Note: 
 
-1) Discovery (BNS)
+1) BNS provides total ordering of name operations on the blockchain.
 
-  a) Works like DHT, but defintely not a DHT.  The Atlas peer network is _unstructured_, unlike DHTs, which makes it more resilient to individual edges in the peer graph failing.
+2) Name information is maintained and distributed on the Atlas network.  This is the first implementation of a decentralized DNS system on top of the Bitcoin blockchain. It combines DNS functionality with public key infrastructure.
 
-  b) Each peer has a 100% replica of all the system's zone files, so all your routing lookups are locally-handled (no Dyn DNS-like DDoS attacks are possible)
+3) Atlas works like DHT, but defintely not a DHT.  The Atlas peer network is _unstructured_, unlike DHTs, which makes it more resilient to individual edges in the peer graph failing.
 
-  c) As long as the peer network graph is connected (doesn't matter how), every peer will eventually get 100% of the zone files.  
+4) BNS will always be eventually consistent, because each peer has a 100% replica of all the system's zone files.  This has the advantage that all your routing lookups are locally-handled (no Dyn DNS-like DDoS attacks are possible, no central authority authorizing domains)
 
 ---
 
