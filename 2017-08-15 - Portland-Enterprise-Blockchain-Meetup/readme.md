@@ -1,6 +1,5 @@
-Presentation to Portland Enterprise Blockchain Meetup
-
-2017-08-15
+### Presentation to Portland Enterprise Blockchain Meetup
+#### 2017-08-15
 
 Install reveal-md
 
@@ -24,4 +23,5 @@ reveal-md slides.md
 ```
 
 Point your browser to: [http://localhost:1948](http://localhost:1948)
+
 use 'S' for speaker mode.
