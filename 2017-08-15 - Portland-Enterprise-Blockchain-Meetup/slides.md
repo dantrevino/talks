@@ -30,11 +30,11 @@ Note:
 
 Note:
 
-1) Discovery (Atlas, BNS) - Atlas, a peer network that enables discovery for the BlockStack Naming System.  
+1) Discovery encompasses Atlas and BNS (Blockstack Naming System).  Atlas is a peer network that enables discovery for the BlockStack Naming System.  
 
-2) Identity (Blockchain ID) - Based on the Blockstack Naming System, users peg their identities to domains e.g. `jackzampolin.id`. 
+2) Identity (Blockchain ID) is based on the Blockstack Naming System.  Users peg their identities to domains e.g. `jackzampolin.id`.
 
-3) Storage (Gaia) - User and application data tied to app/system keys and users.
+3) Storage (Gaia) - Gaia is a framework for managing user and application data tied to app/system keys and users.
 
 ---
 
@@ -66,7 +66,7 @@ Note:
 
 2) Access is granted to applications through the identity system. 
 
-3) Storage backend currently Dropbox. Adding support for S3 compatible backends (AWS, Google, Azure, Minio)
+3) Storage backend currently Dropbox. Adding support for S3 compatible backends (AWS, Google, Azure, Minio), as well as distributed systems like IPFS.
 
 ---
 
@@ -78,9 +78,9 @@ Note:
 [Onename](https://onename.com)
 
 Note:
-1) Register id via the Blockstack browser or CLI.
+1) IDs are 100% user owned, and can be registered via the Blockstack browser or CLI.
 
-2) .id namespace currently on bitcoin blockchain
+2) .id namespace currently on bitcoin blockchain and is currently the largest application usage of that network.
 
 3) Virtualchain makes this identity blockchain agnostic
 
@@ -109,18 +109,21 @@ Note:
 
 Note:
 
-1) Virtualchain is a logical layer for multiplexing multiple fork-consistent state transition journals on a blockchain.
+1) Virtualchain addresses scalability and latency concerns when using blockchain for applications as well as dependency on any single blockchain.
 
-  a) Blockchains can fail (Namecoin)
-  
-  b) Betting on any one blockchain this early in the evolution of the space is a losing bet
+2) It is a logical layer for multiplexing multiple fork-consistent state transition journals on a blockchain.  Which is a fancy way of saying it allows multiple applications to maintain total ordering of operations.
 
-  c) Application's journal can be forked and corrupted by the underlying blockchain
+3) Some implications:
 
-2) Used during namecoin -> bitcoin chain migration of BNS
+  a) The BlockStack system is not dependant on any specific blockchain.  Drivers can be written to enable this development stack on any blockchain.  This is also smart because betting on any one blockchain this early in the evolution of the space is a losing bet. For example, this functionality was used during namecoin -> bitcoin chain migration of BNS.
+
+  b) Applications can be updated, migrated, changed without dependency on blockchain
+
+  c) Application transactions can occur outside of the blockchain, lessening impact on the blockchain network and improving overall performance.
 
 ---
 
+<section data-background="#270f34">
 ## Find Us ##
 
 * Slack - chat.blockstack.org
@@ -128,3 +131,10 @@ Note:
 * Twitter - @BlockstackOrg
 * Github - github.com/blockstack/
 * Meetup - meetup.com/Blockstack-Portland
+
+Note: 
+1) Be sure to download and try the Blockstack Browser at blockstack.org/install
+
+2) Whitepapers and more detailed technical information can be found at blockstack.org/papers
+
+3) Join us at Blockstack-Portland
