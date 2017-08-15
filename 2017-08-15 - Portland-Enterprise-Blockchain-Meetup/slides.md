@@ -32,9 +32,9 @@ Note:
 
 1) Discovery encompasses Atlas and BNS (Blockstack Naming System).  Atlas is a peer network that enables discovery for the BlockStack Naming System.  
 
-2) Identity (Blockchain ID) is based on the Blockstack Naming System.  Users peg their identities to domains e.g. `jackzampolin.id`.
+2) Storage (Gaia) - Gaia is a framework for managing user and application data tied to app/system keys and users.
 
-3) Storage (Gaia) - Gaia is a framework for managing user and application data tied to app/system keys and users.
+3) Identity (Blockchain ID) is based on the Blockstack Naming System.  Users peg their identities to domains e.g. `jackzampolin.id`.
 
 ---
 
