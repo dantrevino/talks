@@ -28,7 +28,7 @@ Note:
 [Identity](https://blockstack.org/posts/blockchain-identity)
 
 
-Note:
+Note:  There are 3 main components to the BlockStack API:
 
 1) Discovery encompasses Atlas and BNS (Blockstack Naming System).  Atlas is a peer network that enables discovery for the BlockStack Naming System.  
 
