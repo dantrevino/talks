@@ -14,9 +14,34 @@
 Note:
 1) Blockstack is a new decentralized Internet where users own their data and apps run locally.
 
-2) Blockstack is an open source development layer for the bitcoin blockchain that enables identity, storage, and discovery.
+2) Blockstack is an open source development API for the bitcoin blockchain that enables identity, storage, and discovery.
 
-3) Built to be blockchain agnostic
+---
+
+<section data-background="#270f34">
+## BlockStack API ##
+
+[Storage](https://github.com/blockstack/blockstack-core/blob/rc-0.14.2/docs/gaia.md)
+
+[Discovery](https://blockstack.org/whitepaper.pdf)
+
+[Identity](https://blockstack.org/posts/blockchain-identity)
+
+Note:
+
+1) Storage (Gaia)
+
+a) Turns existing storage providers into dumb datastores (privacy, encryption)
+
+b) Uses familiar filesystem concepts such as inodes, getFile, putFile
+
+2) Discovery
+
+a) Works like DHT, but defintely not a DHT.  The Atlas peer network is _unstructured_, unlike DHTs, which makes it more resilient to individual edges in the peer graph failing.
+
+b) Each peer has a 100% replica of all the system's zone files, so all your routing lookups are locally-handled (no Dyn DNS-like DDoS attacks are possible)
+
+c) As long as the peer network graph is connected (doesn't matter how), every peer will eventually get 100% of the zone files.  
 
 ---
 
@@ -32,81 +57,30 @@ Note:
 
 2) .id namespace on bitcoin blockchain
 
----
-
-<section data-background="#270f34">
-## Storage ##
-
-[Gaia](https://github.com/blockstack/blockstack-core/blob/rc-0.14.2/docs/gaia.md)
-
-Note:
-1) Turns existing storage providers into dumb datastores (privacy, encryption)
-
-2) Uses familiar filesystem concepts such as inodes, getFile, putFile
+3) Built to be blockchain agnostic
 
 ---
 
 <section data-background="#270f34">
-## Discovery ##
+## Virtual Chain ##
 
-[Atlas](https://blockstack.org/whitepaper.pdf)
-
-Note:
-1) DHT based
-=======
-1) Works like DHT, but defintely not a DHT.  The Atlas peer network is _unstructured_, unlike DHTs, which makes it more resilient to individual edges in the peer graph failing.
-
-2) Each peer has a 100% replica of all the system's zone files, so all your routing lookups are locally-handled (no Dyn DNS-like DDoS attacks are possible)
-
-3) As long as the peer network graph is connected (doesn't matter how), every peer will eventually get 100% of the zone files.  
-
-4) Just works!
-
----
-
-<section data-background="#270f34">
-## Demo ##
-
-Note:
-1) ToDo Demo - identity & storage
-2) Identity
-  a. Landing.vue
-    i. blockstack.redirectToSignIn()
-  b. App.vue
-    i. blockstack.isUserSignedIn()
-3) storage
-  a. Dashboard.vue
-    i. blockstack.putFile()
-    ii. blockstack.getFile()
-
----
-
-<section data-background="#270f34">
-## Build ##
-
-```bash
-npm install -g yo generator-blockstack
-mkdir hello-blockstack && cd $_
-yo blockstack
-npm run start
-```
+[https://blockstack.org/virtualchain_dccl16.pdf](https://blockstack.org/virtualchain_dccl16.pdf)
 
 Note:
 
-1) Install Yeoman and the blockstack app generator using npm.
+1) Virtualchain is a logical layer for multiplexing multiple fork-consistent state transition journals on a blockchain.
 
-2) Create a new directory and `cd` into it.
+a) a blockchain can fail
 
-3) Generate your Blockstack app.
+b) Application's journal can be forked and corrupted by the underlying blockchain
 
-4) Start the development server.
+2) Used during namecoin to bitcoin chain migration
 
 ---
 
-<section data-background="#270f34">
 ## Find Us ##
 
 * Slack - chat.blockstack.org
-* Twitter - <i class="fa fa-twitter" aria-hidden="true"></i>@BlockstackOrg
+* Twitter - @BlockstackOrg
 * GitHub - github.com/blockstack/
 * Meetup - meetup.com/Blockstack-Portland
