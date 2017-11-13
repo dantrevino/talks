@@ -10,6 +10,7 @@
 
 ## What Is Blockstack? ##
 
+<img src="pillars.png"/>
 
 Note:
 1) Blockstack is a new decentralized Internet where users own their data and apps run locally.
@@ -69,7 +70,7 @@ Note:
 npm install -g yo generator-blockstack
 mkdir hello-blockstack && cd $_
 yo blockstack
-npm run start
+npm start
 ```
 
 Note:
