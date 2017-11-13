@@ -85,7 +85,7 @@ Note:
 ---
 
 <section data-background="#270f34">
-## Blockstack Ready in 5 Minutes ##
+## Blockstack Your Own App in 5 Minutes ##
 
 Teriminal Here -->
 
@@ -102,8 +102,8 @@ Note:
   * signout-button
   * avatar-image
   * heading-name
-  
-5) require.js
+
+5) show require.js
 
 ---
 
