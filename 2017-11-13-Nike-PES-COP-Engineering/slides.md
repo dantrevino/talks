@@ -1,4 +1,4 @@
-<section data-background="white">
+<section data-background="white" />
 ![BlockStack](https://media.githubusercontent.com/media/blockstack/designs/master/logo/external/RGB/logo/blockstack-logo-vertical-bug%402x.png)
 
 
@@ -6,7 +6,7 @@
 
 ---
 
-<section data-background="#270f34">
+<section data-background="#270f34" />
 
 ## What Is Blockstack? ##
 
@@ -21,7 +21,7 @@ Note:
 
 ---
 
-<section data-background="#270f34">
+<section data-background="#270f34" />
 ## Identity ##
 
 [Blockstack id](https://blockstack.org/posts/blockchain-identity)
@@ -35,7 +35,7 @@ Note:
 
 ---
 
-<section data-background="#270f34">
+<section data-background="#270f34" />
 ## Storage ##
 
 [Gaia](https://github.com/blockstack/blockstack-core/blob/rc-0.14.2/docs/gaia.md)
@@ -47,7 +47,7 @@ Note:
 
 ---
 
-<section data-background="#270f34">
+<section data-background="#270f34" />
 ## Discovery ##
 
 [Atlas](https://blockstack.org/whitepaper.pdf)
@@ -63,7 +63,7 @@ Note:
 
 ---
 
-<section data-background="#270f34">
+<section data-background="#270f34" />
 ## Demo ##
 
 ```bash
@@ -85,7 +85,7 @@ Note:
 
 ---
 
-<section data-background="#270f34">
+<section data-background="#270f34" />
 ## Blockstack Your Own App in 5 Minutes ##
 
 Teriminal Here -->
@@ -108,7 +108,7 @@ Note:
 
 ---
 
-<section data-background="#270f34">
+<section data-background="#270f34" />
 ## Find Us ##
 
 * Slack - chat.blockstack.org
