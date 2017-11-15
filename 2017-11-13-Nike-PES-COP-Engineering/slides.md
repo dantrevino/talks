@@ -5,6 +5,7 @@
 #### cop-blockchain
 
 Note:
+
 </section>
 
 ---
@@ -133,4 +134,5 @@ Note:
 * Meetup - meetup.com/Blockstack-Portland
 
 Note:
+
 </section>
