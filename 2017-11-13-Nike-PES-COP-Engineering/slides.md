@@ -2,7 +2,10 @@
 ![BlockStack](https://media.githubusercontent.com/media/blockstack/designs/master/logo/external/RGB/logo/blockstack-logo-vertical-bug%402x.png)
 
 
-###### cop-blockchain
+#### cop-blockchain
+
+Note:
+</section>
 
 ---
 
@@ -19,6 +22,8 @@ Note:
 
 3) Built to be blockchain agnostic
 
+</section>
+
 ---
 
 <section data-background="#270f34">
@@ -33,6 +38,8 @@ Note:
 
 2) .id namespace on bitcoin blockchain
 
+</section>
+
 ---
 
 <section data-background="#270f34">
@@ -44,6 +51,8 @@ Note:
 1) Turns existing storage providers into dumb datastores (privacy, encryption)
 
 2) Uses familiar filesystem concepts such as inodes, getFile, putFile
+
+</section>
 
 ---
 
@@ -60,6 +69,8 @@ Note:
 3) As long as the peer network graph is connected (doesn't matter how), every peer will eventually get 100% of the zone files.  
 
 4) Just works!
+
+</section>
 
 ---
 
@@ -82,6 +93,8 @@ Note:
 3) Generate your Blockstack app.
 
 4) Start the development server.
+
+</section>
 
 ---
 
@@ -106,12 +119,18 @@ Note:
 
 5) show require.js
 
+</section>
+
 ---
 
 <section data-background="#270f34">
+
 ## Find Us ##
 
 * Slack - chat.blockstack.org
 * Twitter - <i class="fa fa-twitter" aria-hidden="true"></i>@Blockstack
 * GitHub - github.com/blockstack/
 * Meetup - meetup.com/Blockstack-Portland
+
+Note:
+</section>
