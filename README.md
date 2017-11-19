@@ -1,7 +1,8 @@
 # Blockstack Portland
 
+Subdirectories contain notes and, if applicable, slides for each of the meetups.  
 
-### Getting Started
+### Using the slides
 
 Install reveal-md
 
