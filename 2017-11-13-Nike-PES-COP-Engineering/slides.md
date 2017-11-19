@@ -102,7 +102,7 @@ Note:
 <section data-background="#270f34">
 ## Blockstack Your Own App in 5 Minutes ##
 
-Teriminal Here -->
+Terminal Here -->
 
 Note:
 
