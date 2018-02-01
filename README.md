@@ -2,6 +2,8 @@
 
 Subdirectories contain notes and, if applicable, slides for each of the meetups.  Font awesome is included locally so that offline presentations will work.  Currently using version 5.06.
 
+Align branding to blockstack.org []"Brands"](https://projects.invisionapp.com/boards/HE2VVROFSGB27/)
+
 ### Using the slides
 
 Clone the repo
@@ -25,4 +27,3 @@ reveal-md <presentation subdirectory>/slides.md --css <presentation subdirectory
 ```
 
 Point your browser to: [http://localhost:1948](http://localhost:1948)
-
