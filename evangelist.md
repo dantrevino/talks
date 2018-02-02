@@ -18,36 +18,36 @@ Currently, I see the 3 pillars of the Blockstack platform as ([whitepaper link](
 In addtion, there are several other key components that are important.  Below are the areas of knowledge required, with some component pieces identified.
 
 **System Architecture**  
-a. Component Architecture ( [forum link](https://forum.blockstack.org/t/component-architecture/1417))
-b. Blockstack Layers
-c. Blockstack Core API 
-d. Full Node vs Light Client
-e. Virtual Chains and their implementation
-f. Blockstack Browser
-f. Roadmap
+1. Component Architecture ( [forum link](https://forum.blockstack.org/t/component-architecture/1417))
+2. Blockstack Layers
+3. Blockstack Core API 
+4. Full Node vs Light Client
+5. Virtual Chains and their implementation
+6. Blockstack Browser
+7. Roadmap
 
 **Identity**
-a. Overview - BNS and it's operation, zone files
-b. Authorization - Concepts, APIs
-c. Domains/Subdomains
-d. Replication
-e. Discoverability
-f. Roadmap
+1. Overview - BNS and it's operation, zone files
+2. Authorization - Concepts, APIs
+3. Domains/Subdomains
+4. Replication
+5. Discoverability
+6. Roadmap
 
 **Storage (Gaia)**
-a. Basics - Storage Layers, basic file operations
-b. Multi-Reader 
-c. Multi-Device
-d. Driver API
-e. Roadmap
+1. Basics - Storage Layers, basic file operations
+2. Multi-Reader 
+3. Multi-Device
+4. Driver API
+5. Roadmap
 
 **Discovery/Replication (Atlas)**
-a. Concepts
-b. Full Node
-c. Roadmap
+1. Concepts
+2. Full Node
+3. Roadmap
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDY5NTU1ODldfQ==
+eyJoaXN0b3J5IjpbMzk5ODA3NTYyXX0=
 -->
