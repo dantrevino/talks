@@ -18,9 +18,8 @@ Currently, I see the 3 pillars of the Blockstack platform as:
 In addtion, there are several other key components that are important.  Below are the areas of knowledge required, with some component pieces identified.
 
 **System Architecture**  
-1. Component Architecture ( [forum link](https://forum.blockstack.org/t/component-architecture/1417))
-2. Blockstack Layers
-3. Blockstack Core API 
+1. Component Architecture ( [forum link](https://forum.blockstack.org/t/component-architecture/1417)) & Blockstack layers (ref: whitepaper)
+2. Blockstack Core API 
 4. Full Node vs Light Client
 5. Virtual Chains and their implementation
 6. Blockstack Browser
@@ -49,5 +48,5 @@ In addtion, there are several other key components that are important.  Below ar
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjU1NDg3OTFdfQ==
+eyJoaXN0b3J5IjpbMTM1NzIyOTM1XX0=
 -->
