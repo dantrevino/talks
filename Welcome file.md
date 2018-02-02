@@ -35,10 +35,10 @@ In addtion, there are several other key components that are important.  Below ar
 
 **Storage (Gaia)**
 1. Basics - Storage Layers, basic file operations
-2. Multi-Reader 
-3. Multi-Device
+2. Multi-Reader data access
+3. Multi-Device data access
 4. Driver API
-5. Roadmap
+5. Storage Roadmap
 
 **Discovery/Replication (Atlas)**
 1. Concepts
@@ -48,5 +48,5 @@ In addtion, there are several other key components that are important.  Below ar
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDUwMDUwMzNdfQ==
+eyJoaXN0b3J5IjpbMTY0MDQxNjY4MF19
 -->
