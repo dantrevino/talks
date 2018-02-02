@@ -23,7 +23,7 @@ In addtion, there are several other key components that are important.  Below ar
 4. Full Node vs Light Client
 5. Virtual Chains and their implementation
 6. Blockstack Browser
-7. Roadmap
+7. Architeture Roadmap
 
 **Identity**
 1. Overview - BNS and it's operation, zone files
@@ -31,7 +31,7 @@ In addtion, there are several other key components that are important.  Below ar
 3. Domains/Subdomains
 4. Replication
 5. Discoverability
-6. Roadmap
+6. Identity Roadmap
 
 **Storage (Gaia)**
 1. Basics - Storage Layers, basic file operations
@@ -48,5 +48,5 @@ In addtion, there are several other key components that are important.  Below ar
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NzIyOTM1XX0=
+eyJoaXN0b3J5IjpbLTE1NDUwMDUwMzNdfQ==
 -->
