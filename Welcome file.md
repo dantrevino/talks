@@ -25,7 +25,7 @@ In addtion, there are several other key components that are important.  Below ar
 6. Blockstack Browser
 7. Architeture Roadmap
 
-**Identity**
+**Decentralized Identity**
 1. Overview - BNS and it's operation, zone files
 2. Authorization - Concepts, APIs
 3. Domains/Subdomains
@@ -33,7 +33,7 @@ In addtion, there are several other key components that are important.  Below ar
 5. Discoverability
 6. Identity Roadmap
 
-**Storage (Gaia)**
+**Decentralized Storage (Gaia)**
 1. Basics - Storage Layers, basic file operations
 2. Multi-Reader data access
 3. Multi-Device data access
@@ -48,5 +48,5 @@ In addtion, there are several other key components that are important.  Below ar
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MDQxNjY4MF19
+eyJoaXN0b3J5IjpbNDMwNDQ1MjI0XX0=
 -->
