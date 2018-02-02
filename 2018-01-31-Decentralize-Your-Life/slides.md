@@ -255,10 +255,13 @@ Note:
 
 ## Find Us ##
 
-* Slack - chat.blockstack.org
-* Twitter - <i class="fa fa-twitter" aria-hidden="true"></i>@Blockstack
-* GitHub - github.com/blockstack/
-* Meetup - meetup.com/Blockstack-Portland
+* <i class="fab fa-slack"></i> chat.blockstack.org
+
+* <i class="fab fa-twitter"></i> @Blockstack
+
+* <i class="fab fa-github"></i> github.com/blockstack/
+
+* <i class="fab fa-meetup"></i> Blockstack-Portland
 
 Note:
 

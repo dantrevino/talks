@@ -43,7 +43,7 @@ Note:  There are 3 main components to the BlockStack API:
 
 <img src="https://blockstack.org/images/visuals/blockstack-tx-diagram.png" width="500">
 
-Note: 
+Note:
 
 1) BNS provides total ordering of name operations on the blockchain.
 
@@ -62,9 +62,9 @@ Note:
 
 Note:
 
-1) Using BNS users point their domain name to a storage backend. 
+1) Using BNS users point their domain name to a storage backend.
 
-2) Access is granted to applications through the identity system. 
+2) Access is granted to applications through the identity system.
 
 3) Storage backend currently Dropbox. Adding support for S3 compatible backends (AWS, Google, Azure, Minio), as well as distributed systems like IPFS.
 
@@ -124,17 +124,23 @@ Note:
 ---
 
 <section data-background="#270f34">
+
 ## Find Us ##
 
-* Slack - chat.blockstack.org
-* Forum - forum.blockstack.org
-* Twitter - @BlockstackOrg
-* Github - github.com/blockstack/
-* Meetup - meetup.com/Blockstack-Portland
+* <i class="fab fa-slack"></i> chat.blockstack.org
 
-Note: 
+* <i class="fab fa-twitter"></i> @Blockstack
+
+* <i class="fab fa-github"></i> github.com/blockstack/
+
+* <i class="fab fa-meetup"></i> Blockstack-Portland
+
+Note:
+
 1) Be sure to download and try the Blockstack Browser at blockstack.org/install
 
 2) Whitepapers and more detailed technical information can be found at blockstack.org/papers
 
 3) Join us at Blockstack-Portland
+
+</section>
