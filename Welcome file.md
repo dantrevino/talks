@@ -15,7 +15,7 @@ Currently, I see the 3 pillars of the Blockstack platform as ([whitepaper link](
 2. Decentralized Storage (Gaia)
 3. Discovery/Replication (Atlas)
 
-In addtion, there are several other key components that are important.  Below are 
+In addtion, there are several other key components that are important.  Below are the areas of knowledge required, with some component pieces identified.
 
 **System Architecture**  
 a. Component Architecture ( [forum link](https://forum.blockstack.org/t/component-architecture/1417))
@@ -49,5 +49,5 @@ c. Roadmap
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NzQ0MTQ2OV19
+eyJoaXN0b3J5IjpbLTE0NDY5NTU1ODldfQ==
 -->
