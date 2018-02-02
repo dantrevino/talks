@@ -1,6 +1,7 @@
 # How Do I Become a World Class Blockstack Evangelist?
 
 **What is a Blockstack evangelist?**
+There are two types of evangelists: Platform evangelists and Developer Evangelists
 A Blockstack evangelist is:
  - An individual who is passionate about the Blockstack platform and ideals
  - Willing to share with fellow evangelists
@@ -48,5 +49,5 @@ In addtion, there are several other key components that are important.  Below ar
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY2OTEwMjI1XX0=
+eyJoaXN0b3J5IjpbLTg3NTU2NDg2NF19
 -->
