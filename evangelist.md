@@ -4,7 +4,7 @@
 A Blockstack evangelist is:
  - An individual who is passionate about the Blockstack platform and ideals
  - Willing to share with fellow evangelists
- - Part Product Marketer, part developer/tinkerer, maybe (usually) both 
+ - Part product marketer, part developer/tinkerer, maybe both 
 
 **What are the product areas that I should learn to become a Blockstack expert?**  Based on my current understanding, I would break it down this way below.  What am I missing?  What sections are in the wrong place?  
 
@@ -48,5 +48,5 @@ In addtion, there are several other key components that are important.  Below ar
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4OTgwNzYzNF19
+eyJoaXN0b3J5IjpbNTE2NDQxMDQ0XX0=
 -->
