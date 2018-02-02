@@ -6,9 +6,10 @@ A Blockstack evangelist is:
  - Willing to share with fellow evangelists
  - Part product marketer, part developer/tinkerer, maybe both 
 
-**What are the product areas that I should learn to become a Blockstack expert?**  Based on my current understanding, I would break it down this way below.  What am I missing?  What sections are in the wrong place?  
+**What are the product areas that I should learn to become a Blockstack expert?**  Based on my current understanding, I would break it down this way below.  
 
-Currently, I see the 3 pillars of the Blockstack platform as ([whitepaper link](https://blockstack.org/whitepaper.pdf)):
+Currently, I see the 3 pillars of the Blockstack platform as:
+([whitepaper link](https://blockstack.org/whitepaper.pdf))
 
 1. Decentralized Identity
 2. Decentralized Storage (Gaia)
@@ -48,5 +49,5 @@ In addtion, there are several other key components that are important.  Below ar
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE2NDQxMDQ0XX0=
+eyJoaXN0b3J5IjpbLTE3NjU1NDg3OTFdfQ==
 -->
