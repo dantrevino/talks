@@ -15,7 +15,7 @@ Currently, I see the 3 pillars of the Blockstack platform as ([whitepaper link](
 2. Decentralized Storage (Gaia)
 3. Discovery/Replication (Atlas)
 
-** System Architecture ** 
+**System Architecture**  
 a. Component Architecture ( [forum link](https://forum.blockstack.org/t/component-architecture/1417))
 b. Blockstack Layers
 c. Blockstack Core API 
@@ -47,5 +47,5 @@ c. Roadmap
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MTM5MDY4Nl19
+eyJoaXN0b3J5IjpbMTIxODgyOF19
 -->
