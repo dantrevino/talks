@@ -1,11 +1,8 @@
-# How Do I Become a World Class Blockstack Developer Evangelist?
+# How Do I Become a World Class Blockstack Evangelist?
 
-**What is a developer evangelist?** ([reference](http://developer-evangelism.com/handbook.php#defining))
-> A developer evangelist is a spokesperson, mediator and translator
-> between a company and its technical staff. Every day millions of
-> dollars are wasted in companies because non-tech people and tech
-> people either don't communicate at all or completely miss each other's
-> points.
+**What is a Blockstack evangelist?**
+A Blockstack evangelist is:
+
 
 **What are the product areas that I should learn to become a Blockstack expert?**  Based on my current understanding, I would break it down this way below.  What am I missing?  What sections are in the wrong place?  
 
@@ -49,5 +46,5 @@ In addtion, there are several other key components that are important.  Below ar
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzk5ODA3NTYyXX0=
+eyJoaXN0b3J5IjpbLTEzNjQwNDAzM119
 -->
