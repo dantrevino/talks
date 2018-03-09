@@ -40,7 +40,7 @@ One more item to note.  CORS needs to be set on the development server since we'
 {"cors": true}
 ```
 
-## HTML Setup ##
+## The HTML ##
 
 3. Break up page into display divs. Existing code should go into the 'app' div.
 ```
@@ -91,7 +91,7 @@ One more item to note.  CORS needs to be set on the development server since we'
 }
 ```
 
-## JS Setup ##
+## The Javascript ##
 9. Initialize blockstack, a login indicator, and a user object in `$(document).ready()`
 
 ```
