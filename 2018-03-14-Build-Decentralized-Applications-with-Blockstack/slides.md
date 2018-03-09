@@ -53,13 +53,13 @@ Note:
 
 ## Find Us ##
 
-* <i class="mdi mdi-slack"></i> chat.blockstack.org
+* <i class="mdi mdi-forum"></i> forum.blockstack.org
 
-* <i class="mdi mdi-twitter"></i>@Blockstack
+* <i class="mdi mdi-twitter"></i> @Blockstack
 
 * <i class="mdi mdi-github-circle"></i> github.com/blockstack/
 
-* meetup.com: Blockstack-Portland
+* <i class="mdi mdi-forum"></i> meetup.com/blockstack-portland
 
 Note:
 
