@@ -96,18 +96,16 @@ One more item to note.  CORS needs to be set on the development server since we'
 
 ```
 const blockstack = window.blockstack
-var login = true
 var user = null
 ```
 
 10. Check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div
 
 ```
-$('#landing').toggle(!login)
-$('#app').toggle(login)
+$('#landing').toggle(!blockstack.isUserSignedIn())
+$('#app').toggle(blockstack.isUserSignedIn())
 
 if (blockstack.isUserSignedIn()) {
-  this.login = true
   this.userData = blockstack.loadUserData()
   this.user = new blockstack.Person(this.userData.profile)
   this.user.username = this.userData.username
@@ -130,13 +128,18 @@ $('#username').text(this.user.name())
 12. Add click handler and signout functionality to signout button
 
 ```
-
+$('#signoutbtn').click(function(e){
+  blockstack.signUserOut(window.location.href)
+})
 ```
 
 13. Add save functionality
 ```
-
-
+$('#savebtn').click(function(e) {
+  var mypicture = $('#content').toDataURL()
+  const encrypt = true
+  blockstack.putFile(STORAGE_FILE,mypicture,encrypt)
+})
 ```
 
 
