@@ -28,7 +28,14 @@ edit index_jQuery.html ... update jquery and add blockstack.js
 mv index.html index.html.orig
 mv index_jQuery.html index.html
 ```
-Next, copy jquery-3.3.1-min.js from your Downloads directory to your new js directory.
+Next, copy jquery-3.3.1-min.js from your Downloads directory to your new js directory.  Next, modify index.html so that jQuery and Blockstack are referenced properly.
+
+```
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/blockstack.js"></script>
+```
+
+Git commit [8493536](https://github.com/dantrevino/html5-canvas-drawing-app/commit/8493536ec0f698842133ef63edcbd037a26fb612)
 
 ## HTML Setup ##
 
