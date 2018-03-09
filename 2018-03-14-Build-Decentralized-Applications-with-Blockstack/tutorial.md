@@ -48,7 +48,31 @@ Git commit [8493536](https://github.com/dantrevino/html5-canvas-drawing-app/comm
 5. Add an avatar and username to the existing header bar.
 6. Add a signout button
 7. Add a save button
-8. Add save as image functionality (https://www.html5canvastutorials.com/advanced/html5-canvas-save-drawing-as-an-image/)
+
+```
+<body>
+<div id="landing">
+  <button type="button">Sign In with Blockstack</button>
+</div>
+<div id="app">
+  <div id="page">
+    <div class="header">
+      <a id="new" class="navbtn">New</a>
+      <div style="float:right;vertical-align:top;">
+        <a id="savebtn" class="navbtn">Save</a>&nbsp;
+        <img id="avatar" src="https://via.placeholder.com/32x32" height="32px" width="32px">
+      </div>
+      <div class="title"><span id="username">Unknown User</span>'s Sketch Pad</div>
+    </div>
+    <div id="content"><p style="text-align:center">Loading Canvas...</p></div>
+    <div class="footer">
+      <div style="float:right;vertical-align:top;">
+        <a id="signout" class="navbtn">Sign Out</a>&nbsp;
+      </div>
+      <div class="palette-case">
+      ...
+```
+
 
 ## JS Setup ##
 7. Check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div
