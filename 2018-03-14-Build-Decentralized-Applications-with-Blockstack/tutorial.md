@@ -35,6 +35,11 @@ Next, copy jquery-3.3.1-min.js from your Downloads directory to your new js dire
 <script src="js/blockstack.js"></script>
 ```
 
+One more item to note.  CORS needs to be set on the development server since we're using a redirect for user authentication.  Create a file in the root directory called ".atom-live-server.json" ...note the leading period.  The contents should be:
+```
+{"cors": true}
+```
+
 Git commit [8493536](https://github.com/dantrevino/html5-canvas-drawing-app/commit/8493536ec0f698842133ef63edcbd037a26fb612)
 
 ## HTML Setup ##
@@ -73,13 +78,57 @@ Git commit [8493536](https://github.com/dantrevino/html5-canvas-drawing-app/comm
       ...
 ```
 
+Git commit [a97d541](https://github.com/dantrevino/html5-canvas-drawing-app/commit/a97d541d47932564cb6420d96641a178bc253671)
 
 ## JS Setup ##
-7. Check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div
-by using jQuery: $('#app').toggle(isUserLoggedIn), $('#landing').toggle(!isUserLoggedIn)
+7. Initialize blockstack, a login indicator, and a user object in `$(document).ready()`
+
+```
+const blockstack = window.blockstack
+var login = true
+var user = null
+```
+
+8. Check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div
+
+```
+$('#landing').toggle(!login)
+$('#app').toggle(login)
+
+if (blockstack.isUserSignedIn()) {
+  this.login = true
+  this.userData = blockstack.loadUserData()
+  this.user = new blockstack.Person(this.userData.profile)
+  this.user.username = this.userData.username
+} else if (blockstack.isSignInPending()) {
+    blockstack.handlePendingSignIn()
+    .then((userData) => {
+      window.location = window.location.origin
+  })
+}
+
+```
+
 8. Populate avatar and username
-9. Add click handler to signout button
+
+```
+$('#avatar').attr('src',this.user.avatarUrl())
+$('#username').text(this.user.name())
+```
+
+9. Add click handler and signout functionality to signout button
+
+```
+
+```
+
 10. Add save functionality
+```
+
+
+```
+
+
 
 ## Profit ##
 11. set up netlify to deploy from tutorial branch
