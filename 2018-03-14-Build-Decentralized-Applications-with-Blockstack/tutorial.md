@@ -1,5 +1,14 @@
 # Introduction to the Blockstack Identity and Storage APIs
 
+
+Blockstack's identity and storage APIs let developers get started developing applications for the new decentralized Internet, quickly and easily.  This is a short demonstration of how easy it to adapt existing applications.
+
+## Getting Started
+
+* [Blockstack Browser](https://blockstack.org/install)
+* [Atom](https://atom.io)
+* [Atom Live Server](https://atom.io/packages/atom-live-server)
+
 ## Dependencies and file/folder setup ##
 
 1. Clone repos needed
@@ -9,8 +18,9 @@ git clone https://github.com/blockstack/blockstack.js
 cd html5-canvas-drawing-app
 ```
 2. Update and add javascript dependencies
-2a. add blockstack.js
-2b. update jquery to current version
+* Add blockstack.js
+* Update jquery to current version.  Download from [here](https://jquery.com/download/)
+
 ```
 mkdir js
 cp ../blockstack.js/dist/blockstack.js ./js
@@ -18,6 +28,7 @@ edit index_jQuery.html ... update jquery and add blockstack.js
 mv index.html index.html.orig
 mv index_jQuery.html index.html
 ```
+Next, copy jquery-3.3.1-min.js from your Downloads directory to your new js directory.
 
 ## HTML Setup ##
 
