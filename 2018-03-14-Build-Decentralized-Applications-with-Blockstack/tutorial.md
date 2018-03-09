@@ -40,8 +40,6 @@ One more item to note.  CORS needs to be set on the development server since we'
 {"cors": true}
 ```
 
-Git commit [8493536](https://github.com/dantrevino/html5-canvas-drawing-app/commit/8493536ec0f698842133ef63edcbd037a26fb612)
-
 ## HTML Setup ##
 
 3. Break up page into display divs. Existing code should go into the 'app' div.
@@ -78,10 +76,23 @@ Git commit [8493536](https://github.com/dantrevino/html5-canvas-drawing-app/comm
       ...
 ```
 
-Git commit [a97d541](https://github.com/dantrevino/html5-canvas-drawing-app/commit/a97d541d47932564cb6420d96641a178bc253671)
+8. We're also going to need a manifest file.  Create `manifest.json` in the root of the directory with the following content
+
+```
+{
+  "name": "Sketch",
+  "start_url": "/",
+  "description": "Sketch. Save. Repeat.",
+  "icons": [{
+    "src": "http://dant.org/sketch.png",
+    "sizes": "400x400",
+    "type": "image/png"
+  }]
+}
+```
 
 ## JS Setup ##
-7. Initialize blockstack, a login indicator, and a user object in `$(document).ready()`
+9. Initialize blockstack, a login indicator, and a user object in `$(document).ready()`
 
 ```
 const blockstack = window.blockstack
@@ -89,7 +100,7 @@ var login = true
 var user = null
 ```
 
-8. Check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div
+10. Check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div
 
 ```
 $('#landing').toggle(!login)
@@ -109,20 +120,20 @@ if (blockstack.isUserSignedIn()) {
 
 ```
 
-8. Populate avatar and username
+11. Populate avatar and username
 
 ```
 $('#avatar').attr('src',this.user.avatarUrl())
 $('#username').text(this.user.name())
 ```
 
-9. Add click handler and signout functionality to signout button
+12. Add click handler and signout functionality to signout button
 
 ```
 
 ```
 
-10. Add save functionality
+13. Add save functionality
 ```
 
 
