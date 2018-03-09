@@ -136,9 +136,10 @@ $('#signoutbtn').click(function(e){
 13. Add save functionality
 ```
 $('#savebtn').click(function(e) {
-  var mypicture = $('#content').toDataURL()
-  const encrypt = true
-  blockstack.putFile(STORAGE_FILE,mypicture,encrypt)
+   var cnvs = $('#canvas')[0]
+   var mypicture = cnvs.toDataURL()
+   const encrypt = true
+   blockstack.putFile(STORAGE_FILE,mypicture,encrypt)
 })
 ```
 
