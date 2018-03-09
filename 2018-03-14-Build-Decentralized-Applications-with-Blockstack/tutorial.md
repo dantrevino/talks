@@ -1,15 +1,16 @@
-# Introduction to the Blockstack Identity and Storage APIs for Developers
+# How to Easily Decentralize your Apps with Blockstack #
+## Introduction to the Blockstack Identity and Storage APIs for Developers ##
 
 
 Blockstack's identity and storage APIs let developers get started developing applications for the new decentralized Internet, quickly and easily.  This is a short demonstration of how easy it to adapt existing applications.
 
-## Getting Started
+### Getting Started ###
 
 * [Blockstack Browser](https://blockstack.org/install)
 * [Atom](https://atom.io)
 * [Atom Live Server](https://atom.io/packages/atom-live-server)
 
-## Dependencies and file/folder setup ##
+### Dependencies and file/folder setup ###
 
 1. Clone repos needed
 ```
@@ -40,7 +41,7 @@ One more item to note.  CORS needs to be set on the development server since we'
 {"cors": true}
 ```
 
-## The HTML ##
+### The HTML ###
 
 3. Break up page into display divs. Existing code should go into the 'app' div.
 ```
@@ -91,15 +92,41 @@ One more item to note.  CORS needs to be set on the development server since we'
 }
 ```
 
-## The Javascript ##
+### The Javascript ###
 9. Initialize blockstack, a login indicator, and a user object in `$(document).ready()`
 
 ```
 const blockstack = window.blockstack
 var user = null
 ```
+This is self explanatory.  We want variable handlers to access Blockstack functionality.
 
 10. Check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div
+
+We'll start with authentication (Identity).  This is a routine pattern.  We want to hide the application content until the user is logged in.  The landing page $('#landing') will include only a 'Sign-In with Blockstack' button.  The application $('#app') will house the primary application content.
+
+Key Blockstack functions:
+* blockstack.isUserSignedIn():
+* blockstack.handlePendingSignIn():
+* blockstack.redirectToSignIn():
+* blockstack.loadUserData():
+* blockstack.Person()
+
+First, the sign-in button:
+ <span style="color:red">blockstack.redirectToSignIn()</span>
+```
+$('#signinbtn').click(function(e) {
+  var origin = window.location.origin + '/'
+  console.log(origin)
+  var manifest = origin + 'manifest.json'
+  console.log(manifest)
+  blockstack.redirectToSignIn(origin,manifest,['store_write','publish_data'])
+})
+```
+Most single user applications will be able to use this function as highlighted.  The default configuration will give your application access to read/write to Gaia storage.  In this case, we are specifying an additional permission request `('publish_data')`, so we specify the options passed.
+
+The `('publish_data')` scope will allow us to make our creations public to the world and allow us to pull them up and view them later.
+
 
 ```
 $('#landing').toggle(!blockstack.isUserSignedIn())
