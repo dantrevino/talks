@@ -35,7 +35,7 @@ Next, copy jquery-3.3.1-min.js from your Downloads directory to your new js dire
 <script src="js/blockstack.js"></script>
 ```
 
-One more item to note.  CORS needs to be set on the development server since we're using a redirect for user authentication.  Create a file in the root directory called ".atom-live-server.json" ...note the leading period.  The contents should be:
+One more item to note.  CORS needs to be set on the development server since we're using a redirect for user authentication.  Create a file in the root directory called ".atom-live-server.json" ...note the leading period.  The contents should be, at minimum :
 ```
 {"cors": true}
 ```
