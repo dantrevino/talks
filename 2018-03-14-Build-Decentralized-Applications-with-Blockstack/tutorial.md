@@ -145,5 +145,19 @@ $('#savebtn').click(function(e) {
 
 
 ## Profit ##
-11. set up netlify to deploy from tutorial branch
+14. Create an image, and save it.
+15. Lets find an our image.  Copy or type the command below into the web developer console:
 
+```
+blockstack.lookupProfile('dantrevino.id','https://core.blockstack.org/v1/names/')
+```
+16. Copy the gaia.blockstack.org url for your development server.  In my case: 127.0.0.1:37697, and paste it into the browser address with our default file name 'sketch.png'.
+```
+"https://gaia.blockstack.org/hub/1PcN47KKVeYEfuxokppB1Vm3yipsFMUnJd/sketch.png"
+```
+17. Since we're saving this as base64 encoding, we can paste the result directly into the browser address bar:
+```
+data:image/png;base64,iVBORw0KGgoA......=
+```
+
+## Win! ##
