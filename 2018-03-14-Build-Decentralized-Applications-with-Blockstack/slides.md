@@ -5,9 +5,9 @@ title: Introduction to the Blockstack Identity and Storage APIs for Developers
 
 <section data-background="#270f34">
 
-<img src="blockstack-0308.svg" height="360px" width="360px" style="border:none;">
+<img src="blockstack.svg" height="360px" width="360px" style="border:none;">
 
-* <img src="blockstack-0308.svg" height="24px" width="24px" style="border:none;vertical-align:text-top;"> dantrevino.id
+* <img src="blockstack.svg" height="24px" width="24px" style="border:none;vertical-align:text-top;"> dantrevino.id
 * <i class="mdi mdi-twitter"></i>@dantrevino
 * <i class="mdi mdi-web">http://dant.org/</i>
 
