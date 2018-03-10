@@ -2,7 +2,7 @@
 ## Introduction to the Blockstack Identity and Storage APIs for Developers ##
 
 
-Blockstack's identity and storage APIs let developers get started developing applications for the new decentralized Internet, quickly and easily.  This is a short demonstration of how easy it to adapt existing applications.
+Blockstack's identity and storage APIs let developers get started developing applications for the new decentralized Internet, quickly and easily.  This is a short demonstration of how easy it to adapt existing applications and immediately gain the benefits of stong identity and encrypted storage for your users.
 
 ### Getting Started ###
 
