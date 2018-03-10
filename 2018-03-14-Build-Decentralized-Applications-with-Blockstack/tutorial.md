@@ -7,12 +7,14 @@ Blockstack's identity and storage APIs let developers get started developing app
 ### Getting Started ###
 
 * [Blockstack Browser](https://blockstack.org/install)
-* [Atom](https://atom.io)
-* [Atom Live Server](https://atom.io/packages/atom-live-server)
+* [Atom](https://atom.io) / [VSCode](https://code.visualstudio.com/)
+* [Live Server](https://github.com/tapio/live-server) or any lightweight web server, preferably one with hot-reload
+
+`npm install -g live-server`
 
 ### Dependencies and file/folder setup ###
 
-1. Clone repos needed
+1. Get and install dependencies
 ```
 git clone https://github.com/dantrevino/html5-canvas-drawing-app
 git clone https://github.com/blockstack/blockstack.js
@@ -20,34 +22,24 @@ cd html5-canvas-drawing-app
 ```
 2. Update and add javascript dependencies
 * Add blockstack.js
-* Update jquery to current version.  Download from [here](https://jquery.com/download/)
 
 ```
-mkdir js
-cp ../blockstack.js/dist/blockstack.js ./js
-edit index_jQuery.html ... update jquery and add blockstack.js
-mv index.html index.html.orig
-mv index_jQuery.html index.html
+cp ../blockstack.js/dist/blockstack.js ./
 ```
-Next, copy jquery-3.3.1-min.js from your Downloads directory to your new js directory.  Next, modify index.html so that jQuery and Blockstack are referenced properly.
+Next, add blockstack to your index.html
 
 ```
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/blockstack.js"></script>
+<script src="/blockstack.js"></script>
 ```
 
-One more item to note.  CORS needs to be set on the development server since we're using a redirect for user authentication.  Create a file in the root directory called ".atom-live-server.json" ...note the leading period.  The contents should be, at minimum :
+One item to note.  CORS needs to be set on the development server since we're using a redirect for user authentication.  Start live-server with the CORS option in your project directory
 ```
-{"cors": true}
+live-server --cors
 ```
 
 ### The HTML ###
 
 3. Break up page into display divs. Existing code should go into the 'app' div.
-```
-<div id="landing"></div>
-<div id="app"></div>
-```
 4. Add a signin button to the landing section.   
 5. Add an avatar and username to the existing header bar.
 6. Add a signout button
@@ -93,24 +85,24 @@ One more item to note.  CORS needs to be set on the development server since we'
 ```
 
 ### The Javascript ###
-9. Initialize blockstack, a login indicator, and a user object in `$(document).ready()`
+9. Initialize blockstack, set up a user object and a filename constant
 
 ```
 const blockstack = window.blockstack
 var user = null
+const STORAGE_FILE = 'sketch.png'
 ```
 This is self explanatory.  We want variable handlers to access Blockstack functionality.
 
-10. Check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div
 
-We'll start with authentication (Identity).  This is a routine pattern.  We want to hide the application content until the user is logged in.  The landing page $('#landing') will include only a 'Sign-In with Blockstack' button.  The application $('#app') will house the primary application content.
+10. Now lets get started with authentication.  We'll check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div.  This is a routine pattern.  We want to hide the application content until the user is logged in.  The landing page $('#landing') will include only a 'Sign-In with Blockstack' button.  The application $('#app') will house the primary application content.
 
 Key Blockstack functions:
-* blockstack.isUserSignedIn():
-* blockstack.handlePendingSignIn():
-* blockstack.redirectToSignIn():
-* blockstack.loadUserData():
-* blockstack.Person()
+* __blockstack.redirectToSignIn()__: Generates an authentication request and redirects the user to the Blockstack browser to approve the sign in request.
+* __blockstack.isUserSignedIn()__: Check if a user is currently signed in.
+* __blockstack.handlePendingSignIn()__:  Tries to process any pending sign in request by returning a Promise that resolves to the user data object if the sign in succeeds.
+* __blockstack.loadUserData()__:  Retrieves the user data object. The user's profile is stored in the key profile.
+* __blockstack.Person()__
 
 First, the sign-in button:
  <span style="color:red">blockstack.redirectToSignIn()</span>
