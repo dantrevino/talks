@@ -119,7 +119,15 @@ Most single user applications will be able to use this function as highlighted. 
 
 The `('publish_data')` scope will allow us to make our creations public to the world and allow us to pull them up and view them later.
 
+Lets go ahead and add our click handler and signout functionality to signout button
+```
+$('#signoutbtn').click(function(e){
+  blockstack.signUserOut(window.location.href)
+})
+```
+Again we see here that Blockstack makes some really simple primitives available for managing the authentication. 
 
+Next we'll set the conditions for displaying our login button or the app. Then we'll check to see if the user is logged in.
 ```
 $('#landing').toggle(!blockstack.isUserSignedIn())
 $('#app').toggle(blockstack.isUserSignedIn())
@@ -134,7 +142,6 @@ if (blockstack.isUserSignedIn()) {
       window.location = window.location.origin
   })
 }
-
 ```
 
 11. Populate avatar and username
@@ -142,14 +149,6 @@ if (blockstack.isUserSignedIn()) {
 ```
 $('#avatar').attr('src',this.user.avatarUrl())
 $('#username').text(this.user.name())
-```
-
-12. Add click handler and signout functionality to signout button
-
-```
-$('#signoutbtn').click(function(e){
-  blockstack.signUserOut(window.location.href)
-})
 ```
 
 13. Add save functionality
