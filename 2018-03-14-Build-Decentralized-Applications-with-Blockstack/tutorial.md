@@ -102,10 +102,13 @@ Key Blockstack functions:
 * __blockstack.isUserSignedIn()__: Check if a user is currently signed in.
 * __blockstack.handlePendingSignIn()__:  Tries to process any pending sign in request by returning a Promise that resolves to the user data object if the sign in succeeds.
 * __blockstack.loadUserData()__:  Retrieves the user data object. The user's profile is stored in the key profile.
+* __blockstack.signUserOut()__:
 * __blockstack.Person()__
 
-First, the sign-in button:
- <span style="color:red">blockstack.redirectToSignIn()</span>
+First, we'll look at the Blockstack sign-in and sign-out functions:
+__blockstack.redirectToSignIn()__
+__blockstack.signUserOut()__
+
 ```
 $('#signinbtn').click(function(e) {
   var origin = window.location.origin + '/'
@@ -114,17 +117,16 @@ $('#signinbtn').click(function(e) {
   console.log(manifest)
   blockstack.redirectToSignIn(origin,manifest,['store_write','publish_data'])
 })
-```
-Most single user applications will be able to use this function as highlighted.  The default configuration will give your application access to read/write to Gaia storage.  In this case, we are specifying an additional permission request `('publish_data')`, so we specify the options passed.
 
-The `('publish_data')` scope will allow us to make our creations public to the world and allow us to pull them up and view them later.
-
-Lets go ahead and add our click handler and signout functionality to signout button
-```
 $('#signoutbtn').click(function(e){
   blockstack.signUserOut(window.location.href)
 })
 ```
+Most single user applications will be able to use this function as highlighted above.  The default configuration will give your application access to read/write to Gaia storage.  In this case, we are specifying an additional permission request `('publish_data')`, so we specify the options passed.
+
+The `('publish_data')` scope will allow us to make our creations public to the world and allow us to pull them up and view them later.
+
+
 Again we see here that Blockstack makes some really simple primitives available for managing the authentication. 
 
 Next we'll set the conditions for displaying our login button or the app. Then we'll check to see if the user is logged in.
