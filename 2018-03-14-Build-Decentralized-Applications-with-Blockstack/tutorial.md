@@ -173,13 +173,14 @@ Copy or type the command below into the web developer console:
 ```
 blockstack.lookupProfile('dantrevino.id','https://core.blockstack.org/v1/names/')
 ```
-16. Copy the gaia.blockstack.org url for your development server.  In my case: 127.0.0.1:8080, and paste it into the browser address with our default file name 'sketch.png'.
+Copy the gaia.blockstack.org url for your development server.  In my case: 127.0.0.1:8080, and paste it into the browser address with our default file name 'sketch.png'.
 ```
 "https://gaia.blockstack.org/hub/1PcN47KKVeYEfuxokppB1Vm3yipsFMUnJd/sketch.png"
 ```
-17. Since we're saving this as base64 encoding, we can paste the result directly into the browser address bar:
+Since we're saving this as base64 encoding, we can paste the result directly into the browser address bar:
 ```
 data:image/png;base64,iVBORw0KGgoA......=
 ```
 
 ## Win! ##
+Blockstack's easy-to-use APIs let you quickly and easily support strong, encrypted user identity and encrypted storage.  Blockstack's feature set makes is a stong contender in the upcoming wave of Decentralized Applications that will make up the New Internet.
