@@ -16,7 +16,7 @@ Blockstack's identity and storage APIs let developers get started developing app
 
 Get and install dependencies
 ```
-git clone https://github.com/dantrevino/html5-canvas-drawing-app
+git clone https://gitlab.com/dantrevino/html5-canvas-drawing-app.git
 git clone https://github.com/blockstack/blockstack.js
 cd html5-canvas-drawing-app
 ```
