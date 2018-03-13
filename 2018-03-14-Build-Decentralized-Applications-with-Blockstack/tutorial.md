@@ -1,10 +1,10 @@
 # How to Easily Decentralize your Apps with Blockstack #
-## Introduction to the Blockstack Identity and Storage APIs for Developers ##
+### Introduction to the Blockstack Identity and Storage APIs for Developers ###
 
 
-Blockstack's identity and storage APIs let developers get started developing applications for the new decentralized Internet, quickly and easily.  This is a short demonstration of how easy it to adapt existing applications and immediately gain the benefits of stong identity and encrypted storage for your users.
+Blockstack's identity and storage APIs let developers get started developing applications for the new decentralized Internet, quickly and easily.  This is a short demonstration of how easy it is to adapt existing applications and immediately gain the benefits of strong identity and encrypted storage for your users.
 
-### Getting Started ###
+## Getting Started ##
 
 * [Blockstack Browser](https://blockstack.org/install)
 * [Atom](https://atom.io) / [VSCode](https://code.visualstudio.com/)
@@ -12,15 +12,15 @@ Blockstack's identity and storage APIs let developers get started developing app
 
 `npm install -g live-server`
 
-### Dependencies and file/folder setup ###
+## Dependencies and file/folder setup ##
 
-1. Get and install dependencies
+Get and install dependencies
 ```
 git clone https://github.com/dantrevino/html5-canvas-drawing-app
 git clone https://github.com/blockstack/blockstack.js
 cd html5-canvas-drawing-app
 ```
-2. Update and add javascript dependencies
+Update and add javascript dependencies
 * Add blockstack.js
 
 ```
@@ -37,13 +37,13 @@ One item to note.  CORS needs to be set on the development server since we're us
 live-server --cors
 ```
 
-### The HTML ###
-
-3. Break up page into display divs. Existing code should go into the 'app' div.
-4. Add a signin button to the landing section.   
-5. Add an avatar and username to the existing header bar.
-6. Add a signout button
-7. Add a save button
+## The HTML ##
+In order to lay the foundation for the authentication and functionality we will:
+1. Break up page into display divs. Existing code should go into the 'app' div.
+1. Add a signin button to the landing section.   
+1. Add an avatar and username to the existing header bar.
+1. Add a signout button
+1. Add a save button
 
 ```
 <body>
@@ -69,7 +69,7 @@ live-server --cors
       ...
 ```
 
-8. We're also going to need a manifest file.  Create `manifest.json` in the root of the directory with the following content
+We're also going to need a manifest file.  Create `manifest.json` in the root of the directory with the following content
 
 ```
 {
@@ -84,29 +84,29 @@ live-server --cors
 }
 ```
 
-### The Javascript ###
-9. Initialize blockstack, set up a user object and a filename constant
+## The Javascript ##
+
+First we'll do some basic housekeeping ... initialize blockstack, set up a user object and a filename constant
 
 ```
 const blockstack = window.blockstack
 var user = null
 const STORAGE_FILE = 'sketch.png'
 ```
-This is self explanatory.  We want variable handlers to access Blockstack functionality.
 
-
-10. Now lets get started with authentication.  We'll check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div.  This is a routine pattern.  We want to hide the application content until the user is logged in.  The landing page $('#landing') will include only a 'Sign-In with Blockstack' button.  The application $('#app') will house the primary application content.
+Now lets get started with fun parts... Blockstack authentication/authorization.  We'll check for user login.  If user is logged in show "app" div.  If user is not logged in show "landing" div.  This is a routine pattern.  We want to hide the application content until the user is logged in.  The landing page $('#landing') will include only a 'Sign-In with Blockstack' button.  The application $('#app') will house the primary application content.
 
 Key Blockstack functions:
 * __blockstack.redirectToSignIn()__: Generates an authentication request and redirects the user to the Blockstack browser to approve the sign in request.
 * __blockstack.isUserSignedIn()__: Check if a user is currently signed in.
 * __blockstack.handlePendingSignIn()__:  Tries to process any pending sign in request by returning a Promise that resolves to the user data object if the sign in succeeds.
 * __blockstack.loadUserData()__:  Retrieves the user data object. The user's profile is stored in the key profile.
-* __blockstack.signUserOut()__:
-* __blockstack.Person()__
+* __blockstack.signUserOut()__:  Sign the user out and optionally redirect to given location.
 
 First, we'll look at the Blockstack sign-in and sign-out functions:
+
 __blockstack.redirectToSignIn()__
+
 __blockstack.signUserOut()__
 
 ```
@@ -124,12 +124,11 @@ $('#signoutbtn').click(function(e){
 ```
 Most single user applications will be able to use this function as highlighted above.  The default configuration will give your application access to read/write to Gaia storage.  In this case, we are specifying an additional permission request `('publish_data')`, so we specify the options passed.
 
-The `('publish_data')` scope will allow us to make our creations public to the world and allow us to pull them up and view them later.
+The `('publish_data')` scope allows us to make our application data public.  For the purposes of this demonstration, we'll be using this permission to enable us to pull up our wonderful pictures, and view them later.
 
+Again we see here that Blockstack makes some really simple primitives available for managing the authentication.
 
-Again we see here that Blockstack makes some really simple primitives available for managing the authentication. 
-
-Next we'll set the conditions for displaying our login button or the app. Then we'll check to see if the user is logged in.
+Next we'll set the conditions for displaying our login button or the app ... our authorization components. Then we'll check to see if the user is logged in.  Blockstack makes simple authorization easy.  Any complex logic will need to be managed by your application.  For our purposes, we'll just check for a valid login.
 ```
 $('#landing').toggle(!blockstack.isUserSignedIn())
 $('#app').toggle(blockstack.isUserSignedIn())
@@ -146,14 +145,16 @@ if (blockstack.isUserSignedIn()) {
 }
 ```
 
-11. Populate avatar and username
+Populate avatar and username using Blockstack's user profile functionality
 
 ```
 $('#avatar').attr('src',this.user.avatarUrl())
 $('#username').text(this.user.name())
 ```
 
-13. Add save functionality
+Finally, we'll use Blockstack's GAIA functionality to save an ecrypted version of our data.  Huge note here.  We are passing `encrypt=true` to the Blockstack putFile function, however, previously our app requested `publish_data` scope.  So even though we're encrypting the file save, our app is making that data _**public**_.
+
+Add save functionality
 ```
 $('#savebtn').click(function(e) {
    var cnvs = $('#canvas')[0]
@@ -163,16 +164,16 @@ $('#savebtn').click(function(e) {
 })
 ```
 
-
-
 ## Profit ##
-14. Create an image, and save it.
-15. Lets find an our image.  Copy or type the command below into the web developer console:
+Create an image, and save it.
 
+Lets find our image and take a look.  
+
+Copy or type the command below into the web developer console:
 ```
 blockstack.lookupProfile('dantrevino.id','https://core.blockstack.org/v1/names/')
 ```
-16. Copy the gaia.blockstack.org url for your development server.  In my case: 127.0.0.1:37697, and paste it into the browser address with our default file name 'sketch.png'.
+16. Copy the gaia.blockstack.org url for your development server.  In my case: 127.0.0.1:8080, and paste it into the browser address with our default file name 'sketch.png'.
 ```
 "https://gaia.blockstack.org/hub/1PcN47KKVeYEfuxokppB1Vm3yipsFMUnJd/sketch.png"
 ```
