@@ -46,7 +46,6 @@ In order to lay the foundation for the authentication and functionality we will:
 1. Add a save button
 
 ```
-<body>
 <div id="landing">
   <button type="button">Sign In with Blockstack</button>
 </div>
@@ -137,6 +136,9 @@ if (blockstack.isUserSignedIn()) {
   this.userData = blockstack.loadUserData()
   this.user = new blockstack.Person(this.userData.profile)
   this.user.username = this.userData.username
+
+  /* avatar and username code go here */
+
 } else if (blockstack.isSignInPending()) {
     blockstack.handlePendingSignIn()
     .then((userData) => {
@@ -145,7 +147,7 @@ if (blockstack.isUserSignedIn()) {
 }
 ```
 
-Populate avatar and username using Blockstack's user profile functionality
+Populate avatar and username using Blockstack's user profile functionality by adding the following to the blockstack.isUserSignedIn() block
 
 ```
 $('#avatar').attr('src',this.user.avatarUrl())
