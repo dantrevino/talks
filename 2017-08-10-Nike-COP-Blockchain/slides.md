@@ -3,6 +3,7 @@
 
 
 ###### dan.trevino@nike.com
+
 ---
 
 <section data-background="#270f34">
@@ -16,6 +17,7 @@ Note:
 2) Blockstack is an open source development layer for the bitcoin blockchain that enables identity, storage, and discovery.
 
 3) Built to be blockchain agnostic
+
 
 ---
 
@@ -51,13 +53,9 @@ Note:
 [Atlas](https://blockstack.org/whitepaper.pdf)
 
 Note:
-<<<<<<< HEAD
-1) DHT based
-=======
-1) Works like DHT, but defintely not a DHT.  The Atlas peer network is _unstructured_, unlike DHTs, which makes it more resilient to individual edges in the peer graph failing.
->>>>>>> 4439e95a4bb85f1179395013ea2bf9bd6bbfb6c1
+1) Works like DHT, but definitely not a DHT.  The Atlas peer network is _unstructured_, unlike DHTs, which makes it more resilient to individual edges in the peer graph failing.
 
-2) Each peer has a 100% replica of all the system's zone files, so all your routing lookups are locally-handled (no Dyn DNS-like DDoS attacks are possible)
+2) Each peer has a 100% replica of all the system's zone files, so all your routing lookups are locally-handled (no DynDNS-like DDoS attacks are possible)
 
 3) As long as the peer network graph is connected (doesn't matter how), every peer will eventually get 100% of the zone files.  
 
