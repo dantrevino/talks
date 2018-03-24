@@ -1,6 +1,14 @@
 ---
-title: Introduction to the Blockstack Identity and Storage APIs for Developers
+title: Title
 theme: theme/blockstack.css
+---
+
+![BlockStack](blockstack-logo-vertical-bug%402x.png)
+
+<img src="blockstack-0308.svg" height="36px" width="36px" style="border:none;vertical-align:middle;"> dantrevino.id
+
+<i class="mdi mdi-twitter"></i>@dantrevino
+
 ---
 
 ## Slide 1 ##

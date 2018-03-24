@@ -1,5 +1,5 @@
 ---
-title: BlockStack
+title: BlockStack - Nike Blockchain COP
 theme: theme/blockstack.css
 ---
 
