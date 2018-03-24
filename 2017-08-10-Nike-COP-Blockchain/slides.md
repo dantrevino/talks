@@ -1,12 +1,14 @@
-<section data-background="white">
+---
+title: BlockStack
+theme: theme/blockstack.css
+---
+
 ![BlockStack](https://media.githubusercontent.com/media/blockstack/designs/master/logo/external/RGB/logo/blockstack-logo-vertical-bug%402x.png)
 
 
 ###### dan.trevino@nike.com
 
 ---
-
-<section data-background="#270f34">
 
 ## What Is Blockstack? ##
 
@@ -18,10 +20,8 @@ Note:
 
 3) Built to be blockchain agnostic
 
-
 ---
 
-<section data-background="#270f34">
 ## Identity ##
 
 [Blockstack id](https://blockstack.org/posts/blockchain-identity)
@@ -35,7 +35,6 @@ Note:
 
 ---
 
-<section data-background="#270f34">
 ## Storage ##
 
 [Gaia](https://github.com/blockstack/blockstack-core/blob/rc-0.14.2/docs/gaia.md)
@@ -47,7 +46,6 @@ Note:
 
 ---
 
-<section data-background="#270f34">
 ## Discovery ##
 
 [Atlas](https://blockstack.org/whitepaper.pdf)
@@ -63,24 +61,31 @@ Note:
 
 ---
 
-<section data-background="#270f34">
 ## Demo ##
 
 Note:
 1) ToDo Demo - identity & storage
+
 2) Identity
+
   a. Landing.vue
+
     i. blockstack.redirectToSignIn()
+
   b. App.vue
+
     i. blockstack.isUserSignedIn()
+
 3) storage
+
   a. Dashboard.vue
+
     i. blockstack.putFile()
+
     ii. blockstack.getFile()
 
 ---
 
-<section data-background="#270f34">
 ## Build ##
 
 ```bash
@@ -102,8 +107,6 @@ Note:
 
 ---
 
-<section data-background="#270f34">
-
 ## Find Us ##
 
 * <i class="fab fa-slack"></i> chat.blockstack.org
@@ -115,5 +118,3 @@ Note:
 * <i class="fab fa-meetup"></i> Blockstack-Portland
 
 Note:
-
-</section>
