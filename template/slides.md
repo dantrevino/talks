@@ -29,13 +29,13 @@ theme: theme/blockstack.css
 
 ## Find Us ##
 
-* <i class="fab fa-slack"></i> chat.blockstack.org
+* <i class="mdi mdi-chat"></i> forum.blockstack.org
 
-* <i class="fab fa-twitter"></i>@Blockstack
+* <i class="mdi mdi-twitter"></i>@Blockstack
 
-* <i class="fab fa-github"></i> github.com/blockstack/
+* <i class="mdi mdi-github"></i> github.com/blockstack/
 
-* <i class="fab fa-meetup"></i> Blockstack-Portland
+* <i class="mdi mdi-chat"></i> Blockstack-Portland
 
 Note:
 

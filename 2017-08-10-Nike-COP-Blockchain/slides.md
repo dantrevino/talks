@@ -3,10 +3,12 @@ title: BlockStack - Nike Blockchain COP
 theme: theme/blockstack.css
 ---
 
-![BlockStack](https://media.githubusercontent.com/media/blockstack/designs/master/logo/external/RGB/logo/blockstack-logo-vertical-bug%402x.png)
+![BlockStack](blockstack-logo-vertical-bug%402x.png)
 
 
-###### dan.trevino@nike.com
+<img src="blockstack-0308.svg" height="36px" width="36px" style="border:none;vertical-align:middle;"> dantrevino.id
+
+<i class="mdi mdi-twitter"></i>@dantrevino
 
 ---
 
@@ -109,12 +111,9 @@ Note:
 
 ## Find Us ##
 
-* <i class="fab fa-slack"></i> chat.blockstack.org
-
-* <i class="fab fa-twitter"></i> @Blockstack
-
-* <i class="fab fa-github"></i> github.com/blockstack/
-
-* <i class="fab fa-meetup"></i> Blockstack-Portland
+<i class="mdi mdi-chat"></i> forum.blockstack.org
+<i class="mdi mdi-twitter"></i> @Blockstack
+<i class="mdi mdi-github"></i> github.com/blockstack/
+<i class="mdi mdi-chat"></i> Blockstack-Portland
 
 Note:
