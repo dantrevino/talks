@@ -112,8 +112,11 @@ Note:
 ## Find Us ##
 
 <i class="mdi mdi-chat"></i> forum.blockstack.org
+
 <i class="mdi mdi-twitter"></i> @Blockstack
+
 <i class="mdi mdi-github"></i> github.com/blockstack/
+
 <i class="mdi mdi-chat"></i> Blockstack-Portland
 
 Note:
